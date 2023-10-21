@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <pattern>*</pattern>
+        <template>Hello, I'm CarrerBot. I am here to help you decide your next career. 
+        All you have to do is answer a few questions. I will provide you with the best career choice based off your 
+        answers. Type "Ready" when you'd like to begin.
+        </template>
+    </category>
+    
+        <!--A - Front End Developer -->
+        <!--B - Back End Developer-->
+        <!--C - Full Stack Developer-->
+        <!--E - Project Manager-->
+        <!--E - UX design -->
+    
+    <category>
+        <pattern>ready</pattern>
+        <template>Let us begin! Which do you enjoy best? 
+            <button>
+                <text>Writing code</text>
+                <postback>coding jobs</postback>
+            </button>
+            <button>
+                <text>Communicating, managaing, etc. activities</text>
+                <postback>noncoding jobs</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>coding jobs</pattern>
+        <template> Do you prefer working on things in the background or do you 
+                   prefer to see what you're building?
+            <button>
+                <text>I like to see what I'm building</text>
+                <postback>front end dev question 1</postback>
+            </button>
+            <button>
+                <text>I prefer working on things in the background</text>
+                <postback>back end dev question 1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>noncoding jobs</pattern>
+        <template> Are you happy being the primary spokesperson?
+            <button>
+                <text>Yes</text>
+                <postback>project manager question 1</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>ux question 1</postback>
+            </button>
+        </template>
+    </category>
+    
+</aiml>

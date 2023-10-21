@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+        <pattern>ux designer</pattern>
+        <template> A career has been chosen! <br/> ux designer summary
+        </template>
+    </category>
+	
+	<category>
+        <pattern>ux question 1</pattern>
+        <template> Are the aesthetics of the website—including its typefaces, sizes, 
+        color schemes, etc. —more important to you than the software used to develop it?
+            <button>
+                <text>Aesthetics</text>
+                <postback>ux suggestion</postback>
+            </button>
+            <button>
+                <text>Software tools</text>
+                <postback>front end dev question 2</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!--User choose a coding job but prefers UX-->
+    <category>
+        <pattern>ux suggestion</pattern>
+        <template> Your choices indicate that you may enjoy a job that doesn't involve coding. Take a look into UX Designers. 
+            <br/>
+            <br/>
+            Summary: User experience design (UX design, UXD, UED, or XD) 
+            is the process of defining the experience a user would go through when interacting 
+            with a company, its services, and its products.[1] Design decisions in UX design 
+            are often driven by research, data analysis, and test results rather than aesthetic 
+            preferences and opinions.
+            <br/>
+            <br/>
+        Find more info about UX Designers 
+        <link>
+            <text>here</text>
+            <url>https://en.wikipedia.org/wiki/User_experience_design</url>
+        </link>
+        </template>
+    </category>
+</aiml>

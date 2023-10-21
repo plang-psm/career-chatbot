@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+        <pattern>project manager question 1</pattern>
+        <template> Which is more enjoyable: overseeing a team's workflow or the design of a website?
+            <button>
+                <text>Teams workflow</text>
+                <postback>project manager suggestion</postback>
+            </button>
+            <button>
+                <text>Design of a website</text>
+                <postback>ux question 1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>project manager suggestion</pattern>
+        <template> Your choices indicate that you may enjoy a job that doesn't involve coding. Take a look into Project Managements. 
+        <br/>
+        <br/>
+        Summary: Project management is the responsibility of a project manager. 
+        This individual seldom participates directly in the activities that produce 
+        the result, but rather strives to maintain the progress, mutual interaction 
+        and tasks of various parties in such a way that reduces the risk of overall 
+        failure, maximizes benefits, and minimizes costs. 
+             <br/>
+             <br/>
+        Find more info about Project Management 
+        <link>
+            <text>here</text>
+            <url>https://en.wikipedia.org/wiki/Project_manager</url>
+        </link>
+        </template>
+    </category>
+</aiml>

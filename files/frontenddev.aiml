@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+	<category>
+        <pattern>front end dev question 1</pattern>
+        <template> Do you prefer designing the website or carrying out the tasks necessary to 
+        bring the design to life?
+            <button>
+                <text>Carrying out the tasks</text>
+                <postback>front end dev question 2</postback>
+            </button>
+            <button>
+                <text>Designing the website</text>
+                <postback>ux question 1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>front end dev question 2</pattern>
+        <template> Do you want to be a master of one thing or a jack of all?
+            <button>
+                <text>Master of one thing</text>
+                <postback>front end dev suggestion</postback>
+            </button>
+            <button>
+                <text>Jack of all</text>
+                <postback>full stack dev question 1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>front end dev suggestion</pattern>
+        <template> Your choices indicate that you may enjoy a job that involves coding and design. 
+        Take a look into Front End Development. 
+            <br/>
+            <br/>
+            Summary: Front-end web development is the development of 
+            the graphical user interface of a website, through the use of HTML, 
+            CSS, and JavaScript, so that users can view and interact with that website.
+            <br/>
+            <br/>
+            Find more info about Front End Development
+            <link>
+                <text>here</text>
+                <url>https://en.wikipedia.org/wiki/Front-end_web_development</url>
+            </link>
+            </template>
+    </category>
+	
+</aiml>

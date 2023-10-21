@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+        <pattern>full stack dev question 1</pattern>
+        <template> Are you interested in the entire construction process of a project?
+            <button>
+                <text>yes</text>
+                <postback>full stack dev suggestion</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>front end dev question 1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>full stack dev suggestion</pattern>
+        <template> Your choices indicate that you may enjoy a job that involves technical coding. 
+        Take a look into Full Stack Development. 
+            <br/>
+            <br/>
+            Summary: A full-stack developer is a developer or engineer who can build 
+            both the front end and the back end of a website. The front end 
+            (the parts of a website a user sees and interacts with) and the 
+            back end (the behind-the-scenes data storage and processing) require 
+            different skill sets.
+            <br/>
+            <br/>
+            Find more info about Full Stack Development
+            <link>
+                <text>here</text>
+                <url>https://www.coursera.org/articles/full-stack-developer</url>
+            </link>
+        </template>
+    </category>
+    
+</aiml>

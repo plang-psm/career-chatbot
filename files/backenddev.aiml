@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+        <pattern>back end dev question 1</pattern>
+        <template> In regards to work that is outside of your speciality, would you rather learn 
+        how to fix the issue yourself or would you rather wait for a specialist to implement a fix?
+            <button>
+                <text>Wait for a specialist to implement the fix</text>
+                <postback>back end dev suggestion</postback>
+            </button>
+            <button>
+                <text>I would prefer to fix it myself</text>
+                <postback>full stack dev question 1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>back end dev suggestion</pattern>
+        <template> Your choices indicate that you may enjoy a job that involves technical coding. 
+        Take a look into Back End Development. 
+            <br/>
+            <br/>
+            Summary: In software engineering, the terms frontend and backend 
+            (sometimes written as back end or back-end) refer to the separation 
+            of concerns between the presentation layer (frontend), and the data 
+            access layer (backend) of a piece of software, or the physical infrastructure 
+            or hardware. In the client–server model, the client is usually considered 
+            the frontend and the server is usually considered the backend, even when 
+            some presentation work is actually done on the server itself.
+            <br/>
+            <br/>
+            Find more info about Back End Development
+            <link>
+                <text>here</text>
+                <url>https://en.wikipedia.org/wiki/Frontend_and_backend</url>
+            </link>
+        </template>
+    </category>
+</aiml>
